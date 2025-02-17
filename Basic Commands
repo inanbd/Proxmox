@@ -4,5 +4,10 @@ systemctl status pveproxy
 #Start the web service
 systemctl start pveproxy
 
-#run on boot
+#run on boot - UI
 systemctl enable pveproxy
+
+#check the pertition sizes of sdb
+fdisk -l /dev/sdb
+
+
